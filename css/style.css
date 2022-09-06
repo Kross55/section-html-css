@@ -72,7 +72,7 @@ body {
 .card{
     display: flex;
 }
-.card-image{
+.card__image{
     margin-right: 30px;
     border-radius: 8px;
     background-image: url(../images/main-image.png);
@@ -82,8 +82,8 @@ body {
     height: 347px;
     position: relative;
 }
-.card-timer{
-    height: 68px;
+.card__timer{
+    padding: 20px 0; 
     font-weight: 700;
     font-size: 22px;
     line-height: 28px;
@@ -91,20 +91,19 @@ body {
     color: #FFFFFF;
 
     position: absolute;
+    bottom: 20px;
     left: 20px;
     right: 20px;
-    bottom: 20px;
 
     background: rgba(255, 255, 255, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(20px);
     border-radius: 4px;
 }
-.card-info{
+.card__info{
     width: 100%;
 }
-.card-info__title{
-    height: 33px;
+.card__info-title{
     margin-top: 8px;
     margin-bottom: 25px;
 
@@ -120,20 +119,20 @@ body {
     letter-spacing: -0.02em;
     color: #373748;
 }
-.card-info__bid{
+.card__info-bid{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    padding: 10px 0;
     background: #F6F6FD;
     border-radius: 8px;
     margin-bottom: 30px;
 }
-.card-info__bid-data{
+.card__info-data{
     margin-left: 20px;
     padding-right: 20px;
 }
-.card-info__bid-price{
+.card__info-price{
     margin-top: 10px;
     font-weight: 600;
     font-size: 18px;
@@ -141,7 +140,7 @@ body {
     letter-spacing: -0.02em;
     color: #373748;
 }
-.card-info__btn{
+.card__info-btn{
     width: 140px;
     height: 60px;
     margin-right: 10px;
@@ -154,17 +153,17 @@ body {
     line-height: 23px;
     color: #FFFFFF;
 }
-.card-info__data-item{
+.card__data-item{
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
-.card-info__data-item-left{
+.card__data-item-left{
     padding-left: 22px;
     padding-right: 10px;
     position: relative;
 }
-.card-info__data-item-left::before{
+.card__data-item-left::before{
     content: '';
     width: 12px;
     height: 12px;
@@ -174,20 +173,19 @@ body {
     left: 0;
     top: 3px;
 }
-.card-info__data-item-left--image-two::before{
+.card__data-item-left--image-two::before{
     background-image: url(../images/Ellipse\ 14-2.png);
 }
-.card-info__data-item-left--image-three::before{
+.card__data-item-left--image-three::before{
     background-image: url(../images/Ellipse\ 14-3.png);
 }
-.card-info__data-item-right{
+.card__data-item-right{
     font-weight: 500;
     color:  #373748;
 }
-.card-info__bottom{
+.card__bottom{
     display: flex;
     justify-content: space-between;
-    height: 48px;
     margin-top: 7px;
     margin-bottom: 8px;
     
@@ -195,28 +193,28 @@ body {
     line-height: 20px;
     letter-spacing: -0.03em;
 }
-.card-info__bottom-item{
+.card__bottom-item{
     display: flex;
     align-items: center;
 }
-.card-info__bottom-item-photo{
+.card__bottom-photo{
     background-image: url(../images/photo.png);
     width: 48px;
     height: 48px;
     border-radius: 50%;
 }
-.card-info__bottom-item-data{
+.card__bottom-data{
     padding-left: 15px;
 }
-.card-info__bottom-item-title{
+.card__bottom-title{
     margin-bottom: 6px;
     font-weight: 600;
     color: #373748;
 }
-.card-info__bottom-item + .card-info__bottom-item{
+.card__bottom-item + .card-info__bottom-item{
     padding-left: 15px;
 }
-.card-info__bottom-item-logo{
+.card__bottom-logo{
     background-image: url(../images/eth.png);
     width: 48px;
     height: 48px;
@@ -226,44 +224,41 @@ body {
     .card{
         display: block;
     }
-    .card-image{
+    .card__image{
         display: block;
         margin: 0 auto;
     }
-    .card-info{
+    .card__info{
         display: inline-block;
         max-width: 900px;
         width: 100%;
     }
-    .card-info__title{
+    .card__info-title{
         text-align: center;
     }
     
 }
 @media (max-width: 466px){
-    .card-info__title{
+    .card__info-title{
         height: 66px;
     }
-    .card-info__bid-price{
+    .card__info-price{
         min-width: 70px;
         font-size: 14px;
         line-height: 19px;
-    }
-    .card-info__bid-price{
-        min-width: 70px;
     }
     .card-info__btn{
         width: 100px;
         font-size: 16px;
         line-height: 20px;
     }
-    .card-info__bottom{
+    .card__bottom{
         display: block;
     }
-    .card-info__bottom-item{
+    .card__bottom-item{
         margin-bottom: 15px;
     }
-    .card-info__bottom-item + .card-info__bottom-item{
+    .card__bottom-item + .card__bottom-item{
         padding-left: 0;
     }
 }
