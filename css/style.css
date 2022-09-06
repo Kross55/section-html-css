@@ -65,12 +65,12 @@ body {
 .container{
     width: 100%;
     max-width: 980px;
-    padding: 40px;   
-    margin: 0 auto;
-    background: #E5E5E5;   
+    margin: 0 auto;   
 }
 .card{
     display: flex;
+    padding: 40px;   
+    background: #E5E5E5;
 }
 .card__image{
     margin-right: 30px;
